@@ -9,20 +9,20 @@ import fonts from './fonts';
 
 // Default nav options for all screens
 const defaultNavOptions = ({ route }: Navigation) => ({
-    // Change screen title from i18n traslates files
-    headerTitle: i18next.t(`app:${route.name}`),
-    // TODO: The following options are examples. Change them to your need
-    headerStyle: {
-      backgroundColor: blue
-    },
-    headerBackTitleStyle: {
-      color: white
-    },
-    headerTitleStyle: {
-      ...fonts.baseFont,
-      color: white
-    },
-    headerTintColor: white
+  // Change screen title from i18n traslates files
+  headerTitle: i18next.t(`app:${route.name}`),
+  // TODO: The following options are examples. Change them to your need
+  headerStyle: {
+    backgroundColor: blue
+  },
+  headerBackTitleStyle: {
+    color: white
+  },
+  headerTitleStyle: {
+    ...fonts.baseFont,
+    color: white
+  },
+  headerTintColor: white
 });
 
 export const appStackNavConfig = {
@@ -36,7 +36,7 @@ export const authStackNavConfig = {
 
 const defaultTabNavOptions = {
   // TODO: Change them to your need
-}
+};
 
 export const tabNavConfig = {
   // TODO: Change them to your need
@@ -48,7 +48,9 @@ export const tabNavConfig = {
 };
 
 // Default nav options for all screens
-export const appScreensNavOptions: Partial<Record<Routes, StackNavigationOptions>> = {
+export const appScreensNavOptions: Partial<
+  Record<Routes, StackNavigationOptions>
+> = {
   // TODO: Add here the screens nav options that changes with respect to
   // the default ones defined in defaultNavOptions, for example...
   [Routes.Login]: {

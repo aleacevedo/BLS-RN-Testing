@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { green } from '@constants/colors';
+import { green, black } from '@constants/colors';
 
 export default StyleSheet.create({
   container: {
@@ -11,5 +11,9 @@ export default StyleSheet.create({
     backgroundColor: green,
     padding: 10,
     borderRadius: 3
+  },
+  nfts: {
+    marginTop: 10,
+    backgroundColor: black
   }
 });
